@@ -2,8 +2,8 @@ package entities;
 
 public class Account {
 
-	private Integer number;
-	private String holder;
+	protected Integer number;
+	protected String holder;
 	protected Double balance;
 	
 	//CONSTRUTORS
