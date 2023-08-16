@@ -27,8 +27,12 @@ public class BusinessAccount extends Account {
 		if (amount <= this.loanLimit) {
 			balance += amount - 10.0;
 		} else {
-			System.out.println("VALOR DE EMPRÉSTIMO EXCEDIDO.");
-			System.out.println(">>> Entre em contato com a nossa central para solicitar um aumento no limite de empréstimo <<<");
+			System.out.println();
+			System.out.println("[ Operação Cancelada ]");
+			System.out.println();
+			System.out.println("[ LIMITE DE EMPRÉSTIMO EXCEDIDO ]");
+			System.out.println();
+			System.out.println("> Entre em contato com a nossa central para solicitar um aumento no limite <");
 		}
 	}
 
