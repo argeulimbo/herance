@@ -223,4 +223,6 @@ public class Program {
 		int resposta = sc.nextInt();
 		return resposta;
 	}
+	
+	
 }
