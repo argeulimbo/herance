@@ -12,7 +12,10 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 
-		int resposta = getEntradaDados(sc);
+		System.out.println("--- G Bank - Bem vindo ---");
+		System.out.println(" :::: Programa de abertura de conta :::: ");
+		System.out.println(" > Digite 1 para abertura de conta corrente & 2 para conta comercial < ");
+		int resposta = sc.nextInt();
 
 		switch (resposta) {
 
@@ -69,6 +72,7 @@ public class Program {
 				System.out.println("[ Fim da execução ]");
 				break;
 			}
+		break;
 
 			// CASE USER SELECT OPTION FOR ACCOUNT BUSINESS
 		case 2:
@@ -215,14 +219,4 @@ public class Program {
 		}
 		sc.close();
 	}
-
-	private static int getEntradaDados(Scanner sc) {
-		System.out.println("--- G Bank - Bem vindo ---");
-		System.out.println(" :::: Programa de abertura de conta :::: ");
-		System.out.println(" > Digite 1 para abertura de conta corrente & 2 para conta comercial < ");
-		int resposta = sc.nextInt();
-		return resposta;
-	}
-	
-	
 }
